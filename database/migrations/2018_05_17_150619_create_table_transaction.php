@@ -23,7 +23,8 @@ class CreateTableTransaction extends Migration
             $table->text('customer_phone');
             $table->text('delivery_address');
             $table->text('description')->nullable();
-            $table->integer('total_amount');
+			$table->text('note')->nullable();
+            $table->bigInteger('total_amount');
             $table->integer('transport_fee')->default(0);
             $table->timestamps();
         });

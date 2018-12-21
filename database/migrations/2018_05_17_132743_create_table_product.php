@@ -27,6 +27,7 @@ class CreateTableProduct extends Migration
             $table->text('parameters');
             $table->text('main_image');
             $table->text('gift')->nullable();
+			$table->integer('status')->default(1);
             $table->timestamps();
         });
     }

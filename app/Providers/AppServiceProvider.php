@@ -16,6 +16,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+		URL::forceScheme('https');
         //
         view()->composer('header',function($view){
             $trademark = TradeMark::all();

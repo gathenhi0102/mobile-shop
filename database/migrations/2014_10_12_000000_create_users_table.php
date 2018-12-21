@@ -25,7 +25,7 @@ class CreateUsersTable extends Migration
 			$table->tinyInteger('type')->default(1);
 			$table->tinyInteger('gender')->nullable();
 			$table->bigInteger('point')->default(0);
-			$table->timestamps('last_login_timestamp');
+			$table->timestamp('last_login_timestamp')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

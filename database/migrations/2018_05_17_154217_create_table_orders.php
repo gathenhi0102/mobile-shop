@@ -18,7 +18,7 @@ class CreateTableOrders extends Migration
             $table->increments('id');
             $table->integer('transaction_id');
             $table->integer('product_id');
-            $table->integer('status_id');
+            $table->integer('status_id')->default(1);
             $table->integer('quantity');
             $table->bigInteger('amount');
             $table->timestamps();

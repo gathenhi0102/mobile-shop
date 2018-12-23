@@ -19,7 +19,7 @@ class CreateTableTransaction extends Migration
             $table->integer('customer_id')->default(0);
             $table->integer('status_id')->default(1);
             $table->text('customer_name');
-            $table->string('customer_email',191)->unique();
+            $table->string('customer_email',191);
             $table->text('customer_phone');
             $table->text('delivery_address');
             $table->text('description')->nullable();

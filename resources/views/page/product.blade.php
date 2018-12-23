@@ -110,11 +110,11 @@
 </div>
 
 <?php
-	$parameters = $product_inf->parameters;
-	$parameters = json_decode($parameters, true);
+	$param = $product_inf->parameters;
+	$parameters = json_decode($param, true);
 ?>
 <!-- Specifications -->
-{{-- <div class="container">
+<div class="container">
 	<div class="spectification_title_container">
 		<h3 class="spectification_title">Thông tin sản phẩm</h3>
 	</div>
@@ -132,7 +132,7 @@
 
 		</table>
 	</div>
-</div> --}}
+</div>
 
 <!-- Recently Viewed -->
 

@@ -23,8 +23,10 @@ class ProductController extends Controller
         $user_default_image = 'default-user-icon.png';
         
         $product_inf = Product::where('id', $req->id)->first();
-        if(empty($product_inf))
+        if(empty($product_inf)){
             return redirect()->route('mainpage');
+        }
+        
         $category = Category::where('id', $product_inf->category_id)->first();
         $conditions_product = Product::where([['id','<>',$product_inf->id], ['category_id',$product_inf->category_id], ['trademark_id',$product_inf->trademark_id]]);
         $product_quantity = $conditions_product->count();

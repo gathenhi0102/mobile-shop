@@ -121,6 +121,7 @@ class TransactionController extends Controller
     //xem chi tiết đơn hàng
     public function viewTransactionInfo(Request $req){
     	$transaction_info = Transaction::find($req->id);
+        $status_img = '';
 
     	if(!empty($transaction_info)){
 

@@ -17,7 +17,7 @@ class CreateTableTransaction extends Migration
         Schema::create('transaction', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('customer_id')->default(0);
-            $table->integer('status_id');
+            $table->integer('status_id')->default(1);
             $table->text('customer_name');
             $table->string('customer_email',191)->unique();
             $table->text('customer_phone');

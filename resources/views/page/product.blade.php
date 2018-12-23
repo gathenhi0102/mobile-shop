@@ -114,7 +114,7 @@
 	$parameters = json_decode($parameters, true);
 ?>
 <!-- Specifications -->
-<div class="container">
+{{-- <div class="container">
 	<div class="spectification_title_container">
 		<h3 class="spectification_title">Thông tin sản phẩm</h3>
 	</div>
@@ -132,7 +132,7 @@
 
 		</table>
 	</div>
-</div>
+</div> --}}
 
 <!-- Recently Viewed -->
 
@@ -153,8 +153,7 @@
 				<!-- Recently Viewed Slider -->
 
 					<div class="owl-carousel owl-theme viewed_slider">
-						{{-- viewed_item is_new: mới
-						iewed_item discount: giảm giá --}}
+						{{-- viewed_item is_new: mới viewed_item discount: giảm giá --}}
 						@foreach($same_product as $same)		
 						<!-- Recently Viewed Item -->
 						<div class="owl-item">
